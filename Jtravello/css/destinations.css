@@ -1,0 +1,577 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.everything-in {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-bottom:#C0C0C0 1px solid;
+    box-shadow: -1px 3px 5px 0px rgba(189,189,189,1);
+}
+
+.div-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Lemonada', cursive;
+    font-size: 1.463em;
+    font-weight: bold; 
+    margin-left: 1%;
+    
+}
+
+.com {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold; 
+    font-size: 1.150em;
+}
+
+.color {
+    color: rgb(255, 63, 63);
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-menu li  {
+    display: inline-block;
+ 
+}
+
+.navigation-menu li a {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.150em;
+    margin-left: 23px;
+}
+
+
+.navigation-menu li a:hover {
+    color: rgb(255, 63, 63);
+}
+
+
+.sign-in-position {
+    width: 15%;
+    text-align: center;
+}
+
+
+.sign-in a {
+    border-radius: 1.25em;
+    padding: .5em 1.15em .55em;;
+    border: solid 1px #918787;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    font-weight: 500;
+}
+
+.sign-in a:hover {
+    border: rgb(255, 63, 63) 1px solid;
+    color: rgb(255, 63, 63);
+}
+
+.current{
+    color:#ff3f3f;
+}
+
+
+
+.thpos {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 4%;
+}
+
+.top-header {
+    text-align: center;
+    font-size: 4.8em;
+    font-weight: 500;
+    color: #303030;
+    font-family: "Balto Web", Helvetiva, Arial, sans-serif;
+    letter-spacing: -.0125em;
+    line-height: .925;
+}
+
+.destfind {
+    text-align: center;
+  font-size: 1.275em;
+  font-weight: 700;
+  color: #ff3f3f;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  margin-top: .575em;
+  font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+  font-weight: 700;
+  margin-bottom: 15%;
+}
+
+.container-flexx {
+    display: flex;
+    justify-content: center;
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.side-site {
+    width: 35%;
+}
+
+.main-site {
+    flex: 1;
+    margin-right: 3%;
+    margin-bottom: 10%;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-holder {
+    margin-top: 0;
+    background-color: #F0F0F0;
+    border-bottom-left-radius: .4em;
+    border-bottom-right-radius: .4em
+}
+
+.textbook {
+    color: #303030;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1.55rem;
+    margin-bottom: 1%;
+
+}
+
+.weight {
+ font-weight: 700;
+}
+
+.city-form {
+    color: #676767;
+    font-size: .765em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    font-weight: 300;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    width: 100%;
+}
+
+#form-city {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid rgba(196,185,185,.6);
+    box-sizing: inherit;
+    border: 1px solid rgba(196,185,185,.6);
+    border-radius: .25em;
+    font-family: "Balto Web", Helvetiva, Arial, sans-serif;
+    font-size: 0.960em;
+    padding: .5em 1.75em .5em .65em;
+    font-weight: bold;
+   
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+}
+
+
+.flexxx {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.date {
+    width: 40%;
+}
+
+.days {
+    width: 40%;
+}
+
+.book-submit {
+    align-items: center;
+
+text-align: center;
+
+background-color: #f74141;
+
+box-shadow: 0 1px 2px rgba(0,0,0,.15);
+
+color: #fff;
+
+font-size: .79em;
+
+font-weight: 700;
+
+text-transform: uppercase;
+
+border: none;
+
+border-radius: 1.75em;
+margin: 2rem auto 0;
+
+padding: .7em 0;
+width: 64%;
+cursor: pointer;
+
+}
+
+.pos {
+    width: 64%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.news-holder {
+    margin-top: 7%;
+}
+
+.tex {
+    color: #303030;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 1.275em;
+    margin-bottom: 1%;
+}
+
+.newss {
+ border-top: solid 4px #f74141;
+border-top-left-radius: .15em;
+border-top-right-radius: .15em;
+border-bottom-left-radius: .4em;
+border-bottom-right-radius: .4em;
+margin-bottom: 0;
+}
+
+.act-nes {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+
+
+
+.textnews {
+    width: 60%;
+    margin-left: 6%;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    font-size: .98em;
+    font-weight: bold;
+    color: rgb(66, 60, 60);
+}
+
+.textnews a:hover {
+    color: #ff3f3f;
+}
+
+.image {
+    display: block;
+    height: 100px;
+   background-size: cover;
+   box-sizing: border-box;
+   flex: 1;
+}
+
+hr { 
+    border : 0;
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+  }
+
+  .colorshow {
+      margin-top: 4px;
+    }
+
+    .story{
+        font-size:.84em ;
+        color: #808080;
+        margin-left: 6px;
+    }
+
+    .surver-holder{
+    margin-top: 5%;
+
+    }
+
+    .survey {
+        color: #ea4e4e;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .925em;
+        font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+        margin-bottom: 1%;
+    }
+
+    .question {
+        color: #303030;
+        margin-bottom: .55rem;
+        font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 1.15em;
+    }
+
+    .holder-bg-color {
+        background-color: #F0F0F0;
+        padding-top: 3%;
+        border-bottom-left-radius: .4em;
+border-bottom-right-radius: .4em;
+    }
+
+    .containter-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .survey-otion {
+        margin-bottom: .9em;
+        font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+        color: #423c3c;
+        font-weight: 700;
+        font-size: .925em;
+    }
+
+    .btn-submit {
+        width: 46%;
+align-items: center;
+background-color: #f74141;
+box-shadow: 0 1px 2px rgba(0,0,0,.15);
+color: #fff;
+font-size: .79em;
+font-weight: 700;
+text-transform: uppercase;
+border: none;
+border-radius: 1.75em;
+padding: 1.025em 0;
+margin: .5em auto;
+cursor: pointer;
+margin-left: 57%;
+    }
+
+.slidero {
+    position: relative;
+    display: block;
+    background-size: cover;
+    width: 100%;
+}
+
+.region {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: whitesmoke;
+    font-weight: 700;
+font-size: 2.45em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+}
+
+.desc {
+    position: absolute;
+    top: 42%;
+    left:25% ;
+    font-size: 1.35em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+
+.region-hokk{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: whitesmoke;
+    font-weight: 700;
+font-size: 2.45em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+}
+
+.desc-hokk {
+    position: absolute;
+    top: 42%;
+    left:29% ;
+    font-size: 1.35em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.region-chu {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    color: whitesmoke;
+    font-weight: 700;
+font-size: 2.45em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+}
+
+.desc-chu {
+    position: absolute;
+    top: 42%;
+    left:21% ;
+    font-size: 1.35em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.region-shu {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    color: whitesmoke;
+    font-weight: 700;
+font-size: 2.45em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+}
+
+.desc-shu {
+    position: absolute;
+    top: 42%;
+    left:21% ;
+    font-size: 1.35em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.region-kan {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    color: whitesmoke;
+    font-weight: 700;
+font-size: 2.45em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+}
+
+.desc-kan {
+    position: absolute;
+    top: 42%;
+    left:27% ;
+    font-size: 1.35em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.region-kyu {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    color: whitesmoke;
+    font-weight: 700;
+font-size: 2.45em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+}
+
+.desc-kyu {
+    position: absolute;
+    top: 42%;
+    left:20% ;
+    font-size: 1.35em;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif ;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.todest-position {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.97rem;
+    font-weight: 600;
+    color: #564747;   
+    text-align: center;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif; 
+    padding-top: 6%;
+}
+
+.td-f {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.Kanto {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-top: 5%; 
+}
+
+.td-boxes {
+    width: 32%;
+    box-shadow: 0px 5px 5px 0px rgba(204,196,204,0.79);
+    border-radius: 8px;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    height: 315px;
+}
+
+.td-boxes:nth-child(3n) {
+    margin-right: 0;
+}
+
+.td-boxes:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    box-shadow: 0px 0px 5px 0px rgba(102,102,102,1);
+}
+
+.td-img {
+    position: relative;
+    height: 140px;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.td-text {
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    font-weight: 500;
+    color: #331414;
+    font-size: 1.15em;
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.td-text:hover a {
+    color: #ff3f3f;
+} 
+
+.td-desc {
+    font-size: .85em;
+    font-weight: 300;
+    color: #919191;
+    font-family: "Balto Web",Helvetiva,Arial,sans-serif;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+
+

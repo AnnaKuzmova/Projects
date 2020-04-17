@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+header {
+   
+    box-shadow: 1px 3px 29px -9px rgba(0,0,0,0.75);
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 18px;
+   margin-bottom: 10%;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    background-color: #dddddd;
+    margin-top: 4%;
+    padding-top: 25px;
+    padding-left: 2%;
+    padding-bottom: 15px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.logo {
+   font-size: 2.678em;
+   font-family: 'Cookie', cursive;
+   color: #F57B51;
+   margin-right: 36%;
+}
+
+.navigation {
+    width: 40%;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.navigation li {
+    display: block;
+    margin-right: 10%;
+}
+
+.navigation li a {
+    font-size: 1.15em;
+    color: #000000;
+}
+
+.navigation li a:hover {
+    color: #F57B51;
+    transition: ease-in-out 0.2s;
+} 
+
+
+.navigation li a.current {
+    color: #F57B51;
+}
+
+.holder {
+    padding-top: 12px;
+}
+
+.holder a{
+    width: 6%;
+    text-align: center;
+    font-size: 1.15em;
+    color: #000000;
+    border: #000000 1px solid;
+    padding: 5px 7px 5px 7px;
+    border-radius: 1.25em;
+}
+
+.wow {
+    position: relative;
+}
+
+.inner-menu {
+    display: none;
+    position: absolute;
+    width: 500%;
+    top: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: white;
+    border-radius: 2px;
+    border: #F57B51 1px solid;
+}
+
+
+.inner-menu ul li {
+    list-style: none;
+}
+
+.holder a:hover {
+    color: #F57B51;
+    transition: ease-in-out .5s;
+    border: none;
+}
+
+.brand-logo-text {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+.container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  
+}
+
+.news {
+    width: 25%;
+    margin-right: 3%;
+}
+
+.page-main {
+    flex: 1;
+   
+}
+
+.text-News {
+    text-align: left;
+    color: #000000;
+    font-size: 1.478em;
+    margin-bottom: 3%;
+}
+
+.news-holder {
+    width: 100%;
+    border-top: rgb(133, 49, 59) 5px solid;
+    border-bottom: #D63447 5px solid;
+    border-radius: 2.625px;
+    background-color: #F6EEDF;
+    box-shadow: 1px 1px 9px -3px rgba(0,0,0,0.75);
+    padding-left: 8px;
+    padding-bottom: 10px;
+    
+}
+
+.news-box {
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.book-image {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    box-shadow: 1px 1px 9px -3px rgba(0,0,0,0.75);
+    width: 50%;
+    height: 245px;
+    
+    cursor: pointer;
+}
+
+.book-image:hover .desc-block{
+    animation-name: DescBlock;
+    animation-duration: .5s;
+    right: 0;
+    cursor: pointer;
+}
+
+.desc-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+   width: 100% ;
+    right: 100%;
+    background-color:rgb(245, 123, 81,0.9);
+    color: #F6EEDF;
+    font-family: 'Cookie', cursive;
+    font-size: 1.64em;
+   padding-top: 50px;
+   
+}
+
+.book-des {
+    flex: 1;
+    text-align: center;
+    color: #000000;
+    padding-left: 20px;
+    padding-top: 14px;
+}
+
+.book-des a {
+    color: #000000;
+}
+
+.author {
+    color: rgb(105, 103, 103);
+    font-weight: 600;
+}
+
+.price {
+    margin-top: 40%;
+    text-align: center;
+    font-size: 1em;
+    color: #F57B51;
+    
+}
+
+.button-holder {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 5px;
+   
+}
+
+.heart {
+   
+    margin-bottom: 12%;
+    font-size: 1.567em;
+    color: gray;
+    cursor: pointer;
+}
+
+.heart-efect {
+    animation-name: heart;
+    animation-duration: 0.4s;
+    color: red;
+}
+
+.heart-hover {
+    color: red;
+    animation-name: heart;
+    animation-duration: 1s;
+    transition: ease-in-out .2s;
+}
+
+.rating {
+  float: left;
+}
+
+.fas.fa-star {
+    color: gray;
+}
+
+.fas.fa-star.yes {
+    color: orange;
+}
+
+
+.buy-now {
+    display: block;
+    width: 50%;
+   margin: 0 auto;
+   cursor: pointer;
+    padding: 5px 6px 5px 6px;
+    color: white;
+    background-color: #D63447;
+    border-radius: 1.25em;
+    text-align: center;
+}
+
+.buy-now:hover {
+    color: white;
+    background-color: #F57B51;
+    transition: ease-in-out .2s;
+}
+
+.slider div{
+    width: 100%;
+    height: 380px;
+    padding-top: 100px;
+    text-align: center;
+    background-size: cover;
+    box-shadow: inset 1px 6px 79px -11px rgba(0,0,0,0.75);
+}
+
+.slider div h2 {
+    font-size: 4.878em;
+    font-family: 'Cookie', cursive;
+    font-size: bold;
+    background: linear-gradient(86deg, rgba(245,123,81,1) 62%, rgba(214,52,71,1) 78%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.holder {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.winner-holder {
+    width: 100%;
+    margin-top: 10%;
+    background-color: #F6EEDF;
+    box-shadow: 1px 1px 9px -3px rgba(0,0,0,0.75);
+    border-top: rgb(133, 49, 59) 5px solid;
+    border-bottom: #D63447 5px solid;
+    border-radius: 2.625px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.best-book-text {
+    margin-bottom: 1%;
+    font-weight: normal;
+    font-size: 1.658em;
+}
+
+.stars {
+    margin-bottom: 1%;
+}
+
+.fas.fa-star {
+    color: rgba(245,123,81,1);
+}
+
+.book-cover img{
+    width: 50%;
+    height: 320px;
+    box-shadow: 1px 1px 9px -3px rgba(0,0,0,0.75);
+}
+
+.book-cover {
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.award {
+    position: absolute;
+    top: 1%;
+    left: 69.45%;
+    font-size: 2.767em;
+    color: 	#FF8C00;
+}
+.foot-container {
+    display: flex;
+    
+}
+
+.logo-footer {
+    width: 40%;
+}
+
+.logo-footer img{
+    width: 25%;
+}
+
+.quotes {
+    width: 80%;
+    font-size: 1.834em;
+    color: #F57B51;
+    font-family: 'Cookie', cursive;
+}
+
+.book-footer {
+    text-align: center;
+    margin-left: 8%;
+}
+
+.book-footer h2{
+ color: #D63447;
+}
+
+.book-footer p a{
+    color:#F57B51;
+   }
+
+   .award-desc {
+    width: 100%;
+    text-align: center;
+}
+
+.award-desc a{
+    margin-bottom: 1%;
+ color: #000000;
+ border: none;
+
+}
+
+.award-desc p {
+    margin-bottom: 2%;
+}
+
+   .label {
+       margin-top: 30%;
+       margin-bottom: 3%;
+       font-size: 1.167em;
+       color: #D63447;
+   }
+
+   input[name="email"] {
+       width: 100%;
+       height: 25px;
+       caret-color: #D63447;
+       background-color: #dddddd;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       border-bottom: #D63447 2px solid;
+   }
+
+
+
+   .scroll-top {
+       position: absolute;
+       top: 70%;
+       left: 98%;
+       width: 13%;
+       padding: 5px 6px 5px 8px;
+       color: white;
+       background-color: #D63447;
+       border-radius: 1.25em;
+   }
+
+   .scroll-top:hover {
+       left: 90%;
+       transition: ease-in-out .5s;
+   }
+
+   .scroll-top:hover  .fas.fa-arrow-left{
+    transform: rotate(90deg);
+}
+
+   .scrl {
+       margin-left: 18%;
+   }
+
+   ::placeholder {
+    color: #D63447;
+    font-weight: bold;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #D63447;
+    background-color: #dddddd;
+  }
+  
+  ::selection {
+    color: #D63447;
+    background-color: #dddddd;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes heart {
+    0% {}
+    25% {transform:scale(1);}
+    50% {transform:scale(1.5);}
+    75% {transform:scale(1);}
+    100% {transform:scale(0.8);}
+}
+
+@keyframes DescBlock {
+    from {right: 100%}
+    to {right:0}
+}
+

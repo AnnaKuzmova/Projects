@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 150px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.container {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: 0px 1px 32px -16px rgba(0,0,0,0.75);
+}
+
+.image-background {
+    width: 50%;
+    background-image: url(images/pattern.jpg);
+    background-size: cover;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.form {
+    flex: 1;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.sign-in-text {
+   margin-top: 1%;
+   margin-bottom: 6%;
+    font-size: 1.678em;
+    color: rgb(68, 68, 68);
+}
+
+hr {
+    background-color: silver;
+    width: 20%;
+    height: 1px;
+}
+
+hr:nth-child(1) {
+    float: right;
+    margin-right: 40px;
+    transform: translateY(25px);
+}
+
+hr:nth-child(2) {
+    float: left;
+    margin-left: 40px;
+    transform: translateY(25px);
+}
+
+.form-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+input {
+    width: 97%;
+    margin-bottom: 6%;
+    border: #eeeeee 1px solid;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 4px;
+    caret-color: #d8002f;
+    background-color: #eeeeee;
+    letter-spacing: .5px;
+}
+
+input:nth-child(2) {
+    margin-bottom: 9%;
+}
+
+input:focus {
+    border: red 1px solid;
+}
+
+input:focus:valid {
+    border: green 1px solid;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 3%;
+    background: linear-gradient(86deg, rgba(216,0,47,1) 0%, rgba(255,142,167,1) 100%);
+    color: #f1f1f1;
+    font-size: 1.000em;
+    height: 40px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}
+
+
+button:hover {
+    background: rgb(216,0,47);
+background: linear-gradient(86deg, rgba(216,0,47,1) 100%, rgba(255,142,167,1) 100%); 
+}
+
+.text {
+    color: rgb(68, 68, 68);
+}
+
+.fab {
+    cursor: pointer;
+    width: 12%;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 3% 2% 6% 2%;
+}
+
+.fa-facebook-f {
+    background-color: #0f6faa;
+}
+
+.fa-facebook-f:hover {
+    background-color: #0e6297;
+}
+
+.fa-instagram {
+    background-color: rgb(218, 38, 92);
+}
+
+.fa-instagram:hover {
+    background-color: rgb(187, 16, 68);
+}
+
+.fa-twitter {
+    background-color: #1d9ff0;
+}
+
+.fa-twitter:hover {
+    background-color: #1a8fd8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

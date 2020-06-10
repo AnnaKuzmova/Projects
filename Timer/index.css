@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    padding-top: 100px;
+    background: linear-gradient(197deg, rgba(97,238,239,1) 0%, rgba(241,251,68,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer-wrap {
+    width: 30%;
+    margin: 0 auto; 
+
+    font-size: 1.500em;
+    color: white;
+    border: white 2px solid;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.timer-wrap a {
+    display: inline-block;
+    margin: 0 5%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
+
+.timer-result {
+    padding: 35px 0;
+    text-align: center;
+    border-bottom: white 2px solid;
+}

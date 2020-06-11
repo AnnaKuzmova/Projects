@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: darksalmon;
+    color: white;
+}
+
+.container {
+    width: 35%;
+    margin: 10% auto 0 auto;
+}
+
+input {
+    width: 30%;
+   padding: 15px 0;
+    border:  white 2px solid;
+    margin: 2% 0 6% 0;
+}
+
+.btn {
+    display: block;
+    background-color: inherit;
+    border: 1px white solid;
+    border-radius: 4px;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+

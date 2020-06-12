@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container  {
+    width: 10%;
+    margin: 10% auto 0 auto;
+    border: gainsboro 1px solid;
+    border-radius: 25px;
+    background-color: gainsboro;
+    cursor: pointer;
+    transition: linear .3s;
+}
+
+.happyColors {
+    background-color: pink;
+    border: pink 1px solid;
+    transition: linear .3s;
+}
+
+.face {
+    padding: 6px 0 6px 8px;
+    font-size: 2.434em;
+    color: darkgrey;
+    transition: linear .3s;
+}
+
+.happy {
+    animation:  Happy .3s linear forwards;
+    color: salmon;
+}
+
+
+@keyframes Happy {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+

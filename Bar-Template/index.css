@@ -1,0 +1,698 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: #252525;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Sancreek', cursive;
+}
+
+.flex {  /* Common flex-class*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+#parallax-header {
+    width: 100%;
+    position: fixed;
+    display: block;
+    top: -25%; 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    transition: all .3s;
+}
+
+#parallax-header h2 {
+    font-size: 2em;
+    color: white;
+    padding: 20px 0;
+}
+
+#parallax-header  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-size: 1.500em;
+}
+
+#header-background {
+    width: 100%;
+    height: 640px;
+    margin-bottom: 5%;
+    padding: 20px 0 50px 0;
+    background-image: url(images/header9.jpg);
+    background-size: cover;
+    transition: all .3s;
+}
+
+#main-header {
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 5px 0px 5px;
+    border: white 6px solid;
+    
+}
+
+.check {
+    display: block;
+    width: 20%;
+    padding: 10px 0 0 20px;
+    color: white;
+    font-size: 1.056em;
+}
+
+.check i {
+    color: #bd8951;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    color: white;
+    background-color: #252525;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.menu:hover {
+    background-color: #bd8951;
+    transition: all .3s;
+}
+
+.header-caption {
+    width: 50%;
+    margin: 3% auto 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.header-caption h1 {
+    font-size: 4.264em;
+}
+
+.header-caption p {
+    font-size: 1.864em;
+    font-weight: bold;
+}
+
+.header-btn {
+    margin-top: 8%;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    border: none;
+    font-size: 1.045em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.header-btn:hover {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 6px rgba(189,137,81,1);
+    transition: all .3s;
+    color: #bd8951;
+}
+
+#navigation {
+position: fixed;
+    top: 0;
+    right: -60%;
+    width: 30%;
+    height: 100vh;
+    background-color: #252525;
+    padding: 10px 0 0 0;
+    text-align: center;
+    transition: all .3s;
+    z-index: 3;
+}
+
+#navigation h3 {
+    margin-bottom: 5%;
+    color: white;
+    font-size: 2em;
+}
+
+.li {
+    position: relative;
+    width: 100%;
+    margin: 3% 0;
+    padding:10px 0;
+    text-align: center;
+    list-style: none;
+  
+}
+
+.li:hover {
+    border-bottom: #bd8951 1px solid;
+}
+
+.li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.567em;
+}
+
+.li a:hover {
+    color: #bd8951;
+    transition: all .3s;
+}
+
+
+#navigation i {
+    display: block;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container.email {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.menu-gallery {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 3;
+}
+
+.image-show {
+    position: relative;
+    width: 35%;
+    height: 460px;
+    margin: 5% auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-show i {
+    position: absolute;
+    color: #bd8951;
+    font-size: 3.234em;
+    cursor: pointer; 
+}
+
+.image-show i:first-child {
+    bottom: -12%;
+    left: 0%;
+}
+
+.image-show i:nth-child(2) {
+    bottom: -12%;
+    right: 0%;
+}
+
+.fas.fa-times-circle {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: #bd8951;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.about-us,.hours {
+    width: 40%;
+    border: green 1px solid;
+}
+
+.article-about-us {
+    width: 60%;
+    padding: 10px 5px;
+}
+
+.article-hours {
+    width: 35%;
+    height: 470px;
+    background-color: #c1996f;
+    text-align: center;
+    color: white;
+}
+
+
+.article-about-us p:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #393939;
+}
+
+.article-about-us h2 {
+    font-size: 5.145em;
+    color: #bd8951;
+}
+
+.article-about-us p:nth-child(3) {
+    margin: 3% 0;
+    font-size: 1.776em;
+    color: #393939;
+    font-weight: bold;
+}
+
+.article-about-us p:nth-child(4) {
+    margin: 4% 0;
+    font-size: 1.015em;
+}
+
+.article-about-us button {
+    margin-top: 2%;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    border: none;
+    font-size: 1.045em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s; 
+}
+
+.article-about-us button:hover {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 6px rgba(189,137,81,1);
+    transition: all .3s;
+    color: #bd8951;
+}
+
+.article-hours video {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.article-hours h3 {
+    font-size: 2.867em;
+    margin-top: 4%;
+}
+
+.article-hours p {
+    font-weight: 700;
+    letter-spacing: .134em;
+}
+
+#bar-offer {
+    text-align: center;
+    margin: 7% 0 0 0;
+    padding: 60px 0;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#bar-offer p {
+    color: #bd8951;
+    font-size: 1.256em;
+    font-weight: bold;
+}
+
+#bar-offer h2 {
+    font-size: 5em;
+    color: white;
+    margin-bottom: 3%   ;
+}
+
+.offer-box {
+    width: 30%;
+    background-color: #bd8951;
+}
+
+.offer-box .offer-image {
+   width: 100%;
+   height: 340px;
+   background-position: center;
+}
+
+.offer-box h3 {
+    padding: 25px 5px;
+    font-size: 2.342em;
+    color: white;
+}
+
+#menu {
+    padding: 60px 0;
+}
+
+#menu p {
+    color: #252525;
+    font-size: 1.234em;
+    font-weight: bold;
+}
+
+#menu h2 {
+    color: #bd8951;
+    font-size: 4em;
+}
+
+#menu ul {
+    width: 60%;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 4px 5px;
+    list-style: none;
+    margin-right: 3%;
+    font-family: 'Sancreek', cursive;
+    font-size: 1.673em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#menu ul li:hover {
+    color: white;
+    background-color: #bd8951;
+    transition: all .3s;  
+}
+
+li.active {
+    color: white;
+    background-color: #bd8951;
+    transition: all .3s;
+}
+
+#menu-items {
+    width: 100%;
+}
+
+.menu-box {
+    width: 30%;
+    height: 320px;
+   background-size: cover;
+   background-position: center;
+   cursor: pointer;
+   margin-bottom: 2%;
+}
+
+.menu-box span {
+    display: none;
+    padding: 3px 5px;
+    color: white;
+    background-color: #bd8951;
+    transition: all .3s;
+}
+
+.menu-box:hover span {
+    display: block;
+    transition: all .3s;
+}
+
+#lucky-hours {
+    padding: 60px 0;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#lucky-hours article {
+    width: 75%;
+    margin: 0 auto;
+    border: white 3px solid;
+    text-align: center;
+}
+
+#lucky-hours article h2 {
+    padding: 10px 0;
+    font-size: 5em;
+    color: white;
+}
+
+#lucky-hours article p {
+    padding: 0 0 10px 0;
+    color: #bd8951;
+    font-weight: bold;
+    font-size: 1.234em;
+}
+
+#meet-bartenders {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#meet-bartenders  p {
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+#meet-bartenders h2 {
+    font-size: 5em;
+    color: #bd8951;
+    margin-bottom: 4%;
+}
+
+.bartender {
+    width: 30%;
+}
+
+.b-image {
+    width: 100%;
+    height: 440px;
+    margin-bottom: 2%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.b-image i {
+    display: block;
+    display: none;
+    color: white;
+    background-color: #393939;
+    padding:10px 20px;
+    border-radius: 3px;
+    font-size: 2em;
+    margin: 0 2% 0 2%;
+    transition: all .3s;
+}
+
+.b-image:hover i {
+    display: block;
+    transition: all .3s;
+    
+}
+
+.b-image i:hover {
+    transform: rotateY(180deg);
+    background-color: #bd8951;
+    transition: all .3s;
+}
+
+.bartender p {
+    font-size: 1.234em;
+}
+
+#stay-in-touch {
+    padding: 60px 0;
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#stay-in-touch h2 {
+    margin-bottom: 3%;
+    font-size: 2.350em;
+    color: white;
+}
+
+#email {
+    width: 80%;
+    padding: 15px 3px;
+    background-color: transparent;
+    border: white 3px solid;
+    color: white;
+}
+
+#email:hover {
+    border: #393939 3px solid;
+}
+
+#email:focus {
+    border: #bd8951 3px solid;
+}
+
+::placeholder {
+    color: white;
+}
+
+#stay-in-touch button {
+    width: 15%;
+   text-align: center;
+   color: white;
+   background-color: #bd8951;
+   border: none;
+   cursor: pointer;
+   transition: all .3s;
+}
+
+#stay-in-touch button:hover {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 6px rgba(189,137,81,1);
+    transition: all .3s;
+    color: #bd8951;
+}
+
+footer {
+    padding: 60px 0;
+}
+
+.info {
+    width: 32%;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2em;
+    margin-bottom: 3%;
+    color: #bd8951;
+}
+
+footer h3 {
+    width: 35%;
+    margin: 2% auto;
+    text-align: center;
+    color: #bd8951;
+    font-size: 1.345em;
+}
+
+footer h3 img {
+    width: 100%;
+    height: 220px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .offer-box {
+        width: 45%;
+        margin-bottom: 2%;
+    }
+
+    #menu ul {
+        width: 70%;
+    }
+
+    #menu ul li {
+        font-size: 1.345em;
+    }
+
+    .menu-box {
+        width: 45%;
+    }
+
+    .menu-box span {
+        display: block;
+    }
+
+    .bartender {
+        width: 45%;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    
+    .flex {
+        justify-content: center;
+
+    }
+    
+    #header-background {
+        display: none;
+    }
+
+    #navigation {
+        width: 50%;
+        height: 100%;
+    }
+
+    .offer-box {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    #menu ul {
+        width: 100%;
+    }
+
+    #menu ul li {
+        margin-bottom: 2%;
+    }
+
+    .menu-box {
+        width: 90%;
+    }
+
+    #menu p {
+        display: none;
+    }
+
+    .bartender {
+        width: 90%;
+    }
+
+    .container.email {
+        width: 90%;
+    }
+
+    #email {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    #stay-in-touch button {
+        width: 50%;
+        padding: 20px 0;
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .image-show {
+        width: 90%;
+        margin: 15% auto 0 auto;
+    }
+
+    .article-about-us,.article-hours {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    #meet-bartenders h2 {
+        font-size: 2em;
+    }
+
+
+  }
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Recipes</title>
+    </head>
+    <body>
+        <div class="container">
+        <section id="header">
+            <h1>Recipes</h1>
+            <button id="open-recipe-modal">Add</button>
+            <div class="filter-holder">
+                <form>
+                    <select name="filter-recipes" id="filter">
+                        <option value="all">All</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <main id="recipe-list">
+           
+        </main>
+        <section id="add-recipe-modal">
+            <div class="form-holder">
+              <img src="" class="pic">
+                <form>
+                    <h2>Dish details</h2>
+                   <label for="picture">
+                       Upload food picture<sup>*</sup>
+                    <input type="file" id="picture" required>
+                   </label>
+                    <label for="name">
+                        Food name
+                        <input type="text" id="name" required>
+                    </label>
+                    <label for="food-type">
+                        
+                        <select name="food-type" id="food-type" required>
+                            <option value="empty" disabled selected>Select Type</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                        </select>
+                    </label>
+                    <textarea name="descripton" id="recipe-description" cols="30" rows="10" required>
+                        Description..
+                    </textarea>
+                    <button id="add-recipe-button">Add</button>
+                   <button id="close-modal">Close</button>
+                </form>
+                
+            </div>
+            
+        </section>
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+    </body>
+</html>

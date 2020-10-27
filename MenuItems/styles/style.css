@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F3F3;
+  color: #46322B;
+}
+
+.container {
+  width: 80%;
+  margin: 3% auto 0 auto;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+}
+
+#header h1 {
+  margin-bottom: 2%;
+  color: #F57B39;
+  font-size: 4.500em;
+  font-family: Sacramento, sans-serif;
+}
+
+#header button {
+  position: relative;
+  border: 2px #46322B solid;
+  width: 10%;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #46322B;
+  cursor: pointer;
+}
+
+#header button::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background-color: #F57B39;
+  z-index: -1;
+}
+
+.filter-holder {
+  display: inline-block;
+  width: 10%;
+  height: 40px;
+}
+
+.filter-holder select {
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+  background-color: transparent;
+  border: 2px #46322B solid;
+  font-weight: bold;
+  color: #F57B39;
+}
+
+#recipe-list {
+  width: 100%;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#recipe-list article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 40%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 5px 5px 10px #c5c4c4;
+          box-shadow: 5px 5px 10px #c5c4c4;
+}
+
+#recipe-list article img {
+  display: block;
+  width: 50%;
+  height: 100%;
+}
+
+.details {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.details * {
+  margin: 5%;
+}
+
+.details h2 {
+  color: #B83933;
+}
+
+.details p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.details .delete-button {
+  position: relative;
+  border: 2px #46322B solid;
+  width: 10%;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #F8F3F3;
+  cursor: pointer;
+  width: 35%;
+}
+
+.details .delete-button::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background-color: #B83933;
+  z-index: -1;
+}
+
+#add-recipe-modal {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+#add-recipe-modal .form-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#add-recipe-modal .form-holder img {
+  width: 50%;
+  height: 100%;
+}
+
+#add-recipe-modal .form-holder form {
+  width: 45%;
+  margin: 3% 0;
+}
+
+#add-recipe-modal .form-holder form h2 {
+  font-family: Sacramento, sans-serif;
+  color: #B83933;
+  font-size: 4em;
+}
+
+#add-recipe-modal .form-holder form label {
+  display: inline-block;
+  width: 90%;
+  margin: 2% 0;
+}
+
+#add-recipe-modal .form-holder form label input {
+  width: 100%;
+  padding: 4px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: #B83933 2px solid;
+}
+
+#add-recipe-modal .form-holder form select {
+  width: 100%;
+  padding: 4px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: #B83933 2px solid;
+}
+
+#add-recipe-modal .form-holder form textarea {
+  width: 90%;
+}
+
+#add-recipe-modal .form-holder form button {
+  display: inline-block;
+  position: relative;
+  border: 2px #46322B solid;
+  width: 10%;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #F8F3F3;
+  cursor: pointer;
+  width: 25%;
+  margin: 3% 2% 0 2%;
+}
+
+#add-recipe-modal .form-holder form button::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  background-color: #B83933;
+  z-index: -2;
+}
+/*# sourceMappingURL=style.css.map */

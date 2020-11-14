@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeatherO</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main id="main-container">
+            <section class="forecast-settings">
+                <h4>Choose weather optons:</h4>
+                <form>
+                    <select name="forecast-option-city" id="city-weather-options">
+                        <option value="Plovdiv">Plovidv</option>
+                        <option value="Sofia">Sofia</option>
+                        <option value="Burgas">Burgas</option>
+                        <option value="Varna">Varna</option>
+                        <option value="Haskovo">Haskovo</option>
+                    </select>
+                    <button class="check">Check</button>
+                </form>
+            </section>
+            <section class="forecast-display">
+                <h4>Forecast:</h4>
+                <div class="f-holder">
+                   
+                </div>                
+            </section>
+            <img id="weather-svg" src="images/weather-girl.svg" alt="weather icon">
+        </main>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <defs>
+                <linearGradient id="sampleGradient">
+                   <stop offset="7%" stop-color="rgba(212,60,79,0.4)" />
+                   <stop offset="73%" stop-color="rgba(228,123,75,0.8)" />
+                </linearGradient>
+             </defs>
+            <path fill="url(#sampleGradient)" fill-opacity="1" d="M0,192L30,170.7C60,149,120,107,180,106.7C240,107,300,149,360,165.3C420,181,480,171,540,138.7C600,107,660,53,720,48C780,43,840,85,900,106.7C960,128,1020,128,1080,112C1140,96,1200,64,1260,48C1320,32,1380,32,1410,32L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+          </svg>
+
+          <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+    </body>
+</html>

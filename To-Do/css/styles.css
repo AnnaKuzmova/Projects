@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(214, 213, 213);
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.holder {
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 60%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.todo input {
+    width: 70%;
+    padding-left: 5px;
+    border: none;
+}
+
+.todo input:focus,.select select:focus {
+    outline: none;
+}
+
+.todo input::placeholder {
+    font-size: 1.200em;
+}
+
+.select {
+    margin-right: 3%;
+    padding: 5px;
+    background-color: rgb(219, 208, 221);
+    border-radius: 5px;
+}
+
+.select select {
+    background-color: transparent;
+    border: none;
+}
+
+.select select option {
+    padding: 5px;
+    background-color: rgb(219, 208, 221);
+}
+
+.todo button {
+    background-color: none;
+    border: none;
+}
+
+.todo button i {
+    padding: 13px;
+    font-size: 1.600em;
+    color: white;
+    background-color: rgb(155, 87, 113);
+}
+
+#list {
+    width: 60%;
+    margin: 4% auto 0 auto;
+}
+
+#list ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 2%;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.7;
+    list-style-type: none;
+}
+
+#list ul li .after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+}
+
+#list ul li.done {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.buttons i {
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+i.fas.fa-clipboard-check {
+    background-color: rgb(102, 102, 199);
+}
+
+i.fas.fa-trash-alt {
+    background-color: rgb(216, 118, 118);
+}
+
+
+
+

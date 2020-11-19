@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
- $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Plovdiv,bg&units=metric&APPID=5bf1498fa703b963f4a0dfc24b54ff29", function(data){
+ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Plovdiv,bg&units=metric&APPID=${PUT ApI KEY FROM THE READ ME FILE}", function(data){
     
     let article = document.createElement('article');
     article.classList.add('f-box');
@@ -37,7 +37,7 @@ $(document).ready(function(){
      $('.f-holder').empty();
     let city = $('#city-weather-options').val();
 
-    $.getJSON(`http://api.openweathermap.org/data/2.5/weather?q=${city},bg&units=metric&APPID=5bf1498fa703b963f4a0dfc24b54ff29`, function(data){
+    $.getJSON(`http://api.openweathermap.org/data/2.5/weather?q=${city},bg&units=metric&APPID=${'PUT ApI KEY FROM THE READ ME FILE'}`, function(data){
     
     let article = document.createElement('article');
     article.classList.add('f-box');

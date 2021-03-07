@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotello</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-photo">
+                
+                <section class="header-description">
+                    <h4 class="h4-gsap-animate">
+                        Welcome To Hotello
+                    </h4>
+                    <span class="span-gsap-animate">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nesciunt harum quaerat iusto repudiandae. Sapiente corporis rem dolores suscipit modi impedit laborum quis, officia blanditiis sed fugiat sit, nisi repellendus?
+                    </span>
+                </section>
+            
+            </div>
+            <nav id="navigation-menu">
+                <div class="container">
+                    <div class="flex">
+                    <h2 class="logo">
+                        Hotello
+                    </h2>
+                    <ul class="h-list">
+                        <li class="nav-link active"><a href="index.html">Home</a></li>
+                        <li class="nav-link"><a href="rooms.html">Rooms</a></li>
+                        <li id="li-menu-outer" class="nav-link"><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+                        <li class="book-now-button nav-link book"><a>BOOK NOW</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header id="mobile-tablet-header">
+            <h2>Hottello</h2>
+            <button class="show-nav-button">
+               <i></i>
+               <i></i>
+               <i></i>
+            </button>
+            <nav id="mobile-navigation">
+                <h3>Hotello</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="rooms.html"><i class="fas fa-hotel"></i> Rooms</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+                    <li class="book-now-button"><a>Book Now</a></li>
+                </ul>
+                <button class="hide-nav">
+                    <i class="fas fa-times"></i>
+                </button>
+            </nav>
+        </header>
+        <main>
+                <section class="offers-grid">
+                   <div class="container">
+                       <h2 class="offers-headline">Our Special Offers</h2>
+                       <div class="grid">
+                           <div class="grid-child one" style="background-image: url(images/beach.jpeg);">
+                            <div class="special-offer">
+                                <h3>Special Offer</h3>
+                                <i class="fas fa-angle-double-down"></i>
+                                <p>
+                                   Get out amazing offers to enjoy your stay in our hotel and expirience the best luxurious and relaxing moments with us.
+                                </p>
+                                <p>From</p>
+                                <p>
+                                    <strong>
+                                        99<sup><i class="fas fa-dollar-sign"></i></sup>
+                                    </strong>
+                                </p>
+                                <a href="">
+                                    BOOK NOW
+                                </a>
+                            </div>
+                            </div>
+                           <div class="grid-child" style="background-image: url(images/concert.jpg);">
+                            <h3 class="grid-child-heading">
+                                Groups and Entertainment
+                            </h3>
+                            <div class="special-offer">
+                                <h3>Special Offer</h3>
+                                <i class="fas fa-angle-double-down"></i>
+                                <p>From</p>
+                                <p>
+                                    <strong>
+                                        99<sup><i class="fas fa-dollar-sign"></i></sup>
+                                    </strong>
+                                </p>
+                                <a href="">
+                                    BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                           <div class="grid-child" style="background-image: url(images/pool.jfif);">
+                            <h3 class="grid-child-heading">
+                                Outdoor swimming pools
+                            </h3>
+                            <div class="special-offer">
+                                <h3>Special Offer</h3>
+                                <i class="fas fa-angle-double-down"></i>
+                                <p>From</p>
+                                <p>
+                                    <strong>
+                                        99<sup><i class="fas fa-dollar-sign"></i></sup>
+                                    </strong>
+                                </p>
+                                <a href="">
+                                    BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                           <div class="grid-child" style="background-image: url(images/gym.jpg);">
+                            <h3 class="grid-child-heading">
+                                Gym and Sports
+                            </h3>
+                            <div class="special-offer">
+                                <h3>Special Offer</h3>
+                                <i class="fas fa-angle-double-down"></i>
+                                <p>From</p>
+                                <p>
+                                    <strong>
+                                        99<sup><i class="fas fa-dollar-sign"></i></sup>
+                                    </strong>
+                                </p>
+                                <a href="">
+                                    BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                           <div class="grid-child" style="background-image: url(images/buffet.jpeg);">
+                            <h3 class="grid-child-heading">
+                                Buffet and restaurant
+                            </h3>
+                            <div class="special-offer">
+                                <h3>Special Offer</h3>
+                                <i class="fas fa-angle-double-down"></i>
+                                <p>From</p>
+                                <p>
+                                    <strong>
+                                        99<sup><i class="fas fa-dollar-sign"></i></sup>
+                                    </strong>
+                                </p>
+                                <a href="">
+                                    BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                       </div>
+                   </div> 
+                </section>
+                <section class="hotel">
+                    <div class="container">
+                        <h2 class="hotel-headline">Welcome To Our Hotel</h2>
+                        <div class="button-holder">
+                            <ul>
+                                <li class="active" type="restaurant">
+                                    <i class="fas fa-utensils"></i>
+                                    <p>Restaurant</p>
+                                </li>
+                                <li type="gym">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <p >Gym</p>
+                                </li>
+                                <li type="bar">
+                                    <i class="fas fa-glass-martini-alt"></i>
+                                    <p>Bar</p>
+                                </li>
+                                <li type="beach">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                    <p>Beaches</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hotel-holder">
+                            
+                            <div class="flex">
+                                <div class="img" style="background-image: url(images/restaurant.jpeg);">
+
+                                </div>
+                                <div class="text">
+                                    <h4 >
+                                        The World Class
+                                    </h4>
+                                    <h2  class="heading-title">
+                                        RESTAURANT AND CAFE
+                                    </h2>
+                                    <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quam debitis harum fugiat distinctio tempore corrupti eos. Voluptatum iure molestias fugit impedit repellat?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae explicabo ex a sunt perferendis officia magnam libero ullam, veritatis voluptates quibusdam, reprehenderit unde iure voluptatem aspernatur. Illo recusandae explicabo cumque.
+                                    </p>
+                                    <button class="services-button">
+                                        See More Services
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="rooms">
+                    <h2 class="room-headline">Our rooms</h2>
+                    <div class="container">
+                        <div class="flex">
+                            <div class="room-box">
+                                <div class="room-image" style="background-image: url(images/realDouble.jpeg);"></div>
+                                <a href="">Double Room</a>
+                            </div>
+                            <div class="room-box">
+                                <div class="room-image" style="background-image: url(images/luxuryRoom2.jpeg);"></div>
+                                <a href="">Luxury Room</a>
+                            </div>
+                            <div class="room-box">
+                                <div class="room-image" style="background-image: url(images/room4.jpeg);"></div>
+                                <a href="">Modern Room</a>
+                            </div>
+                            <div class="room-box">
+                                <div class="room-image" style="background-image: url(images/room3.jpeg);"></div>
+                                <a href="">Elegant Room</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <section id="booking-form-modal">
+            <article class="booking-holder">
+                <div class="booking-image" style="background-image: url(images/reservation.jpeg);">
+                    <div class="reserv-information">
+                        <h2>Make Your Resevation Today</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam non, deserunt id dignissimos qui quia velit officia ut optio officiis corporis incidunt, quam provident. Quae reprehenderit harum maiores non ab.</p>
+                    </div>
+                </div>
+                <form>
+                    <h2>Hotello</h2>
+                    <div class="flex-form">
+                        <p>
+                            <span>First Name:</span>
+                            <input type="text" id="name" class="name">
+                      </p>
+                      <p>
+                            <span>Last Name:</span>
+                            <input type="text" id="name" class="name">
+                        </p>
+                     
+                    </div>
+                    <div class="flex-form">
+                        <p class="email">
+                        <span>Email:</span>
+                       <input type="email" id="email" class="email">
+                    </p>
+                    </div>
+                  <div class="flex-form">
+                   
+                    <p>
+                        <span>Check In:</span>
+                         <input type="date" id="check-in" class="date-input">
+                        </p>
+                        <p> 
+                     
+                      <span>Check Out:</span>
+                       <input type="date" id="check-out" class="date-input">
+                    </p>
+                  </div>
+                  <div class="flex-form">
+                      <p>
+                          <span>Adults:</span>
+                          <select name="adults" id="adults">
+                              <option value="2" selected>2</option>
+                              <option value="4">4</option>
+                              <option value="6">6</option>
+                          </select>
+                        </p>
+                        <p>
+                   
+                          <span>Children:</span>
+                        <select name="children" id="children">
+                            <option value="0" selected>0</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                  </div>
+                  <button class="check-reserv">
+                      Check avaibility
+                  </button>
+                  <button class="close-reservation-form">Close</button>
+                </form>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="flex">
+                    <div class="footer-block">
+                        <h2 class="footer-headline">About Hotello</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, incidunt vel animi ipsam natus ex quidem? Reiciendis, tempore explicabo. Velit vel distinctio nulla.</p>
+                        <h2 class="footer-headline">Subscribe</h2>
+                        <form>
+                            <input type="email" id="subscribe-email" placeholder="your-email@com..">
+                            <a class="send"><i class="fas fa-envelope"></i></a>
+                        </form>
+                    </div>
+                    <div class="footer-block">
+                        <h2 class="footer-headline">Latest Tweets</h2>
+                        <p> <i class="fab fa-twitter"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, iusto amet provident eius placeat facere nobis, alias iste voluptas impedit rerum odit voluptate facilis dignissimos nihil ea magni ut? Officia?</p>
+                       <p> <i class="fab fa-twitter"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, iusto amet provident eius placeat facere nobis, alias iste voluptas impedit rerum odit voluptate facilis dignissimos nihil ea magni ut? Officia?</p>
+                    </div>
+                    <div class="footer-block">
+                        <h2 class="footer-headline">Explore More</h2>
+                        <nav>
+                         <ul class="footer-nav">
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="rooms.html">Rooms</a></li>
+                             <li><a href="">Gallery</a></li>
+                             <li><a href="contact.html">Contact Us</a></li>
+                         </ul>
+                        </nav>
+                        <h2 class="footer-headline">Find Us</h2>
+                        <div class="social-buttons">
+                            <i class="fab fa-instagram"></i> 
+                            <i class="fab fa-twitter"></i> 
+                            <i class="fab fa-facebook"></i> 
+                            <i class="fab fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

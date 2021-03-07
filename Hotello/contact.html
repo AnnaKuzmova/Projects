@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/contacts.css">
+    </head>
+    <body>
+        <header class="holder">
+            <div class="header-text-holder">
+                <h1>Contact Us</h1>
+                <hr>
+                <ul class="text-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li> <i class="fas fa-circle"></i> </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <nav id="navigation-menu">
+                <div class="container">
+                    <div class="flex">
+                    <h2 class="logo">
+                        Hotello
+                    </h2>
+                    <ul class="h-list">
+                        <li class="nav-link"><a href="index.html">Home</a></li>
+                        <li class="nav-link"><a href="rooms.html">Rooms</a></li>
+                        <li class="nav-link"><a href="gallery.html">Gallery</a></li>
+                        <li class="nav-link active"><a href="contact.html">Contact Us</a></li>
+                        <li class="book-now-button nav-link book"><a>BOOK NOW</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header id="mobile-tablet-header">
+            <h2>Hottello</h2>
+            <button class="show-nav-button">
+               <i></i>
+               <i></i>
+               <i></i>
+            </button>
+            <nav id="mobile-navigation">
+                <h3>Hotello</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="rooms.html"><i class="fas fa-hotel"></i> Rooms</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+                    <li class="book-now-button"><a>Book Now</a></li>
+                </ul>
+                <button class="hide-nav">
+                    <i class="fas fa-times"></i>
+                </button>
+            </nav>
+        </header>
+        <main id="main">
+            <div class="container">
+                <div class="main-headline-text">
+                    <h2>
+                        Get in touch
+                    </h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusantium at recusandae ut natus expedita dolorum, placeat iusto ipsa voluptatum officiis magnam laboriosam voluptate.
+                    </p>
+                </div>
+                <div class="flex">
+                    <form id="contact-form">
+                        <label>
+                            <input type="text" id="name" class="name-contact" placeholder="Name.." required>
+                            <input type="email" id="email-contact" class="email-contact" placeholder="Email">
+                            <div class="validation-message">
+                               <i class="far fa-times-circle"></i>
+                               <span>Ivalid email. Please enter again</span> 
+                            </div>
+                        </label>
+                        <label>
+                            <input type="text" id="subject" class="subject-contact" placeholder="Subject" required>
+                           
+                        </label>
+                        <label>
+                            <textarea name="text-subject" class="text-subject" placeholder="Message.." required></textarea>
+                        </label>
+                        <button class="submit-contact" type="submit">
+                            Submit Now
+                        </button>
+                        <div class="sent">
+                            <i class="far fa-check-circle"></i> Message successfully sent. 
+                        </div>
+                    </form>
+                    <section class="information-holder">
+                        <article class="box">
+                             <div class="flex-original">
+                                 <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                 </div>
+                                 <p class="info">
+                                    Street Name St Number,
+                                    State Name
+                                 </p>
+                             </div>
+                        </article>
+                        <article class="box">
+                            <div class="flex-original">
+                                <div class="icon">
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                                <p class="info">
+                                   Info@mail.com
+                                </p>
+                            </div>
+                       </article>
+                       <article class="box">
+                        <div class="flex-original">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <p class="info">
+                               +356 Random Digits
+                            </p>
+                        </div>
+                   </article>
+                    </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99376.82590315345!2d23.30795857513336!3d38.88908963038414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a72a83cbe466f9%3A0x68a0726c48c32bb7!2zTmlsZWFzLCDQk9GK0YDRhtC40Y8!5e0!3m2!1sbg!2sbg!4v1614277533494!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </main>
+        <section id="booking-form-modal">
+            <article class="booking-holder">
+                <div class="booking-image" style="background-image: url(images/reservation.jpeg);">
+                    <div class="reserv-information">
+                        <h2>Make Your Resevation Today</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam non, deserunt id dignissimos qui quia velit officia ut optio officiis corporis incidunt, quam provident. Quae reprehenderit harum maiores non ab.</p>
+                    </div>
+                </div>
+                <form>
+                    <h2>Hotello</h2>
+                    <div class="flex-form">
+                        <p>
+                            <span>First Name:</span>
+                            <input type="text" id="name" class="name">
+                      </p>
+                      <p>
+                            <span>Last Name:</span>
+                            <input type="text" id="name" class="name">
+                        </p>
+                     
+                    </div>
+                    <div class="flex-form">
+                        <p class="email">
+                        <span>Email:</span>
+                       <input type="email" id="email" class="email">
+                    </p>
+                    </div>
+                  <div class="flex-form">
+                   
+                    <p>
+                        <span>Check In:</span>
+                         <input type="date" id="check-in" class="date-input">
+                        </p>
+                        <p> 
+                     
+                      <span>Check Out:</span>
+                       <input type="date" id="check-out" class="date-input">
+                    </p>
+                  </div>
+                  <div class="flex-form">
+                      <p>
+                          <span>Adults:</span>
+                          <select name="adults" id="adults">
+                              <option value="2" selected>2</option>
+                              <option value="4">4</option>
+                              <option value="6">6</option>
+                          </select>
+                        </p>
+                        <p>
+                   
+                          <span>Children:</span>
+                        <select name="children" id="children">
+                            <option value="0" selected>0</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                  </div>
+                  <button class="check-reserv">
+                      Check avaibility
+                  </button>
+                  <button class="close-reservation-form">Close</button>
+                </form>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="flex">
+                    <div class="footer-block">
+                        <h2 class="footer-headline">About Hotello</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, incidunt vel animi ipsam natus ex quidem? Reiciendis, tempore explicabo. Velit vel distinctio nulla.</p>
+                        <h2 class="footer-headline">Subscribe</h2>
+                        <form>
+                            <input type="email" id="subscribe-email" placeholder="your-email@com..">
+                            <a class="send"><i class="fas fa-envelope"></i></a>
+                        </form>
+                    </div>
+                    <div class="footer-block">
+                        <h2 class="footer-headline">Latest Tweets</h2>
+                        <p> <i class="fab fa-twitter"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, iusto amet provident eius placeat facere nobis, alias iste voluptas impedit rerum odit voluptate facilis dignissimos nihil ea magni ut? Officia?</p>
+                       <p> <i class="fab fa-twitter"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, iusto amet provident eius placeat facere nobis, alias iste voluptas impedit rerum odit voluptate facilis dignissimos nihil ea magni ut? Officia?</p>
+                    </div>
+                    <div class="footer-block">
+                        <h2 class="footer-headline">Explore More</h2>
+                        <nav>
+                         <ul class="footer-nav">
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="rooms.html">Rooms</a></li>
+                             <li><a href="">Gallery</a></li>
+                             <li><a href="contact.html">Contact Us</a></li>
+                         </ul>
+                        </nav>
+                        <h2 class="footer-headline">Find Us</h2>
+                        <div class="social-buttons">
+                            <i class="fab fa-instagram"></i> 
+                            <i class="fab fa-twitter"></i> 
+                            <i class="fab fa-facebook"></i> 
+                            <i class="fab fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+       
+        <script src="contacts.js"></script>
+    </body>
+</html>

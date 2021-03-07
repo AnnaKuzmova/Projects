@@ -1,0 +1,211 @@
+body {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rosybrown;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 2% 0;
+    font-size: 3.2em;
+    font-family: 'Fredoka One', cursive;
+    background-image: linear-gradient(to right,
+     rgba(176,19,109,1) 21%,
+      rgba(255,0,61,1) 54%, 
+      rgba(255,163,163,1) 100%);
+      background-clip: text;
+    -webkit-background-clip: text;  
+    -moz-background-clip: text; 
+    color: transparent;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 3% auto 0 auto;
+}
+
+.grid {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid img {
+    display: block;
+    width: 20%;
+    margin: 1% 0;
+    background-color: pink;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, rgba(176,19,109,1) 21%, rgba(255,0,61,1) 54%, rgba(255,163,163,1) 100%);
+    -webkit-border-image: linear-gradient(to right, rgba(176,19,109,1) 21%, rgba(255,0,61,1) 54%, rgba(255,163,163,1) 100%);
+    -moz-border-image: linear-gradient(to right, rgba(176,19,109,1) 21%, rgba(255,0,61,1) 54%, rgba(255,163,163,1) 100%);
+    border-image-slice: 1;
+    border-radius: 7px;
+    -webkit-box-shadow: 6px 8px 15px -1px #FF1892; 
+box-shadow: 6px 8px 15px -1px #FF1892;
+}
+
+.information {
+    position: relative;
+    width: 35%;
+    text-align: center;
+    background-color: pink;
+    border: 4px rgba(255,0,61,1) solid;
+    border-radius: 5px;
+}
+
+.box-holder {
+    position: absolute;
+    left: -7%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.circle {
+    border: rgba(255,0,61,1) 4px solid;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.circle img {
+    display: block;
+    height: 100%;
+    background-color: white;
+}
+
+.text {
+    flex: 1;
+    padding: 5px 0;
+    border: rgba(255,0,61,1) 4px solid;
+    border-radius: 7px;
+    border-left: none;
+    font-family: 'Fredoka One', cursive;
+    background-image: linear-gradient(to right,
+     rgba(176,19,109,1) 21%,
+      rgba(255,0,61,1) 54%, 
+      rgba(255,163,163,1) 100%);
+      background-clip: text;
+    -webkit-background-clip: text;  
+    -moz-background-clip: text;  
+    color: transparent;
+    font-size: 1.3em;
+}
+
+button {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 40%;
+    padding: 10px 5px;
+    border: rgba(255,0,61,1) 4px solid;
+    border-radius: 20px;
+    background-color: #ff003d;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    -webkit-box-shadow: -2px 14px 13px -1px rgba(255,0,61,0.61); 
+    box-shadow: -2px 14px 13px -1px rgba(255,0,61,0.61);
+}
+
+#reference {
+    float: right;
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#reference::after {
+    overflow: auto;
+}
+
+#reference div {
+    width: 90%;
+    padding: 10px 0;
+    background-color: white;
+    border: #ff003d 4px solid;
+    border-right: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.me-in-box {
+    flex: 1;
+    border: #ff003d 4px solid;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+.me-in-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#win-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,0,61,0.5);
+}
+
+#win-modal article {
+    width: 45%;
+    margin: 1% auto 0 auto;
+    padding: 10px 0;
+    background-color: white;
+    border: rgba(255,0,61,1) 4px solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#win-modal article h2 {
+    margin-bottom: 4%;
+    font-size: 2.7em;
+    font-family: 'Fredoka One', cursive;
+}
+
+#win-modal article h2 span{
+   display: inline-block;
+   color: rgba(255,0,61,1);
+}
+
+#win-modal article p {
+    font-size: 1.8em;
+    color: rgba(176,19,109,1);
+    font-weight: bold;
+}
+
+
+#win-modal article button {
+    position: static;
+    margin-top: 2%;
+}
+
+

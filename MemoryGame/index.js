@@ -83,9 +83,11 @@ function openPicture() {
   chosenIndex = this.getAttribute('index');
   let img = arrayOfPictures[chosenIndex];
   this.setAttribute('src', img.src);
+  this.style.pointerEvents = 'none';
   chosenPicIndexArray.push(chosenIndex);
   chosenPictures.push(img);
     if(chosenPictures.length == 2) {
+        allImgElements.forEach(img => img.style.pointerEvents = 'none');
         turn++;
         turnSpan.innerHTML = turn;
         setTimeout(() =>checkForMatch(), 1000); 
@@ -121,6 +123,7 @@ function showWinModal() {
 
 //Checking for a match and remove the matched img elements
 function checkForMatch() {
+   
     if(chosenPictures[0].name == chosenPictures[1].name) {
         allImgElements[chosenPicIndexArray[0]].style.opacity = '0';
         allImgElements[chosenPicIndexArray[1]].style.opacity = '0';
@@ -134,12 +137,14 @@ function checkForMatch() {
         }
     } else {
         allImgElements[chosenPicIndexArray[0]].setAttribute('src', 'images/question-mark.png');
+        allImgElements[chosenPicIndexArray[0]].style.pointerEvents = 'auto';
         allImgElements[chosenPicIndexArray[1]].setAttribute('src', 'images/question-mark.png');
-
+        allImgElements[chosenPicIndexArray[1]].style.pointerEvents = 'auto';
     }
 
     chosenPictures.length = 0;
     chosenPicIndexArray.length = 0;
+    allImgElements.forEach(img => img.style.pointerEvents = 'auto');
 }
 
 //Restart Game function 

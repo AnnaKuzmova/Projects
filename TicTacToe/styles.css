@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+}
+
+.board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.cell {
+    position: relative;
+    border: tomato 2px solid;
+    cursor: pointer;
+}
+
+.cell:nth-child(-n+3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n) {
+    border-right: none;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+
+.cell:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+.cell.circle::after,.cell.x::after  {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-position: center;
+    background-size: cover;
+    cursor: not-allowed;
+}
+
+.cell.circle::after {
+    background-image: url('images/circle.png');
+}
+
+.cell.x::after {
+    background-image: url('images/cancel.png');
+}
+
+.board.x .cell:not(.x):not(.circle):hover::after  {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('images/cancel.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.board.circle .cell:not(.x):not(.circle):hover::after  {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url('images/circle.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.winning-message-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0 , 0 , 0, 0.5);
+}
+
+.winning-message-modal.close {
+    display: none;
+}
+
+.winning-message-modal h2 {
+    font-size: 5rem;
+    color: white;
+}
+
+.winning-message-modal button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    border: white 3px solid;
+    background-color: black;
+    transition: all .3s linear;
+}
+
+.winning-message-modal button:hover {
+    color: black;
+    border: black 3px solid;
+    background-color: white;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+

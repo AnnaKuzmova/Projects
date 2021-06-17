@@ -7,6 +7,6 @@ When the first one makes a row, then a modal which holds information about who h
 I hope in the future to implement more features to the game, allowing more options for the users(players).
 
 # Built with: 
-    * HTML
-    * CSS
-    * Javascript
+* HTML
+ * CSS
+* Javascript

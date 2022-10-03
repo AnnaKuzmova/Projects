@@ -1,7 +1,7 @@
 # Hotello - hotel site.
 
 # Description :
-Hotello is a multi-paged site for a hotel, created for a friend's course work. 
+Hotello is a multi-paged site for a hotel, created for a ~~friend's~~ course work. 
 In the site the user can see many offers and filter through different types of rooms, the hotel offers. 
 Users can explore the hotel's landscape through the modern gallery (from ``gallery.html``) by clicking on a random picture.
 
